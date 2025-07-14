@@ -24,7 +24,7 @@ public class FolderController {
         this.authService = authService;
     }
 
-    @PostMapping("/folder")
+    @PostMapping("/create")
     public ResponseEntity<?> createFolder(@RequestBody FolderCreateDto dto) {
         try {
             User user = authService.getCurrentUser();
